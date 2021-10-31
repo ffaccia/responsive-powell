@@ -1,0 +1,49 @@
+h1, h2, h3, h4, h5, h6 
+    margin: 0 0 .75em
+
+h1:last-child, h2:last-child, h3:last-child, 
+h4:last-child, h5:last-child, h6:last-child
+    margin: 0
+
+h1
+    font-size: 2rem
+    font-weight: $font-light
+    line-height: 1.15
+    text-transform: uppercase
+
+
+h2
+    font-size: 1.2rem
+    font-weight: $font-light
+    letter-spacing: 1.5px
+    text-transform: uppercase
+        
+
+.title-large
+    font-size: 3rem
+    font-weight: $font-bold
+    line-height: .9
+
+    span 
+        font-weight: $font-bold
+        white-space: nowrap 
+
+.title-footer
+    color: $text-inverse
+    text-transform: uppercase
+    //padding-top: 3em
+    letter-spacing: 2px
+    word-spacing: 4px
+    line-height: 2
+
+    &:before, &:after
+        content: ''
+        display: block
+        margin: 0 auto
+        width: 67%
+        
+        height: 1px
+        background: $text-inverse
+        opacity: .25
+
+

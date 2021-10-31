@@ -1,0 +1,31 @@
+.container
+    width: 90%
+    max-width: 1200px
+    padding: 0 auto       
+    margin: 0 auto   
+
+.grid
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap 
+    //border-bottom: 2px solid black
+
+
+.col
+    flex: 0 0 100%    
+
+
+.col--full
+    flex: 0 0 100%    
+
+
+@media(min-width: 725px)
+    
+    .col--1-3
+        flex-basis: 33.3333%
+
+    .col--2-3
+        flex-basis: 66.6666%        
+       
+    .col--1-2
+        flex-basis: 50%    

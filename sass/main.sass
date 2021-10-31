@@ -1,18 +1,38 @@
-body
-    background: yellow
-
-
 // 1. Config files and settings
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700')
+
+@import url('https://fonts.googleapis.com/css?family=Mukta:300,400,500,700')
+
+// 2. Config files and helper
+@import abstracts/_color.sass
 
 
-// 2. Vendor
+// 4. Base styles
+@import base/base
+@import base/typography
+@import base/type
 
 
-// 3. Base styles
+// 3. Vendor
+@import vendor/_normalize
 
 
-// 4. Layouts
+
+// 5. Layouts
+@import layout/grid
+@import layout/home-promo
+@import layout/home-sales-points
+@import layout/header
+@import layout/hero
+@import layout/nav
+@import layout/footer
 
 
-// 5. Components
+// 6. Components
+@import components/component
+@import components/cta
+
+// 7. font-awesome
+@import _font-awesome-all
+
 

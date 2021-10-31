@@ -1,0 +1,36 @@
+.btn
+    display: inline-block
+    padding: .6rem 1.7rem
+    text-transform: uppercase
+    text-decoration: none
+
+    &:not(:last-of-type)
+        margin-bottom: .6rem
+
+
+//red accent button    
+.btn--primary
+    background: $accent     
+    color: $white
+    border: 1px solid lighten($accent, 50)     
+
+    &:hover
+        background: darken($accent, 25)
+    &:focus
+        background: darken($accent, 30)
+        
+
+//transparent button        
+.btn--secondary
+    background: $primary
+    color: $text-inverse
+    border: 1px solid darken($text-inverse, 10)     
+
+    &:hover
+        background: $text-inverse
+        color: $text-primary
+    &:focus
+        background: darken($text-inverse, 20)
+        color: darken($text-inverse, 20) 
+    
+    

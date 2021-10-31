@@ -1,0 +1,18 @@
+.hero
+    background: linear-gradient(to right, $main, $secondary)    
+    color: $text-inverse
+    padding-top: 8em
+    padding-bottom: 5em
+    text-align: center
+
+    @media(min-width: 725px)
+        text-align: left 
+
+        & .text-intro
+            padding-right: 2em        
+
+.hero-img
+    display: none
+
+    @media(min-width: 725px)
+        display: block

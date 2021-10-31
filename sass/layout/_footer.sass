@@ -1,0 +1,42 @@
+footer
+    background: $dark
+    color: $text-inverse
+    padding: 4em 0
+    position: relative
+    
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        left: 0 
+        right: 0
+        top: 0
+        bottom: 0
+        opacity: 0.03
+        background-image: url(../img/logo.svg)
+        background-size: contain 
+        background-repeat: no-repeat 
+        background-position: center 
+        
+
+
+
+.social-links
+    padding-top: 2em
+    display: flex
+    justify-content: center   
+    column-gap: 2rem
+    
+    & .fa-white
+        color: white
+        opacity: 0.7
+
+.nav-footer
+    display: flex 
+    //flex-direction: column
+    justify-content: center
+    padding-top: 2em 
+    column-gap: 2em
+
+.container-footer
+    width: 60%

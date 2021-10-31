@@ -1,0 +1,40 @@
+$font-stack: 'Roboto', sans-serif
+$font-stack2: 'Mukta', sans-serif
+
+$font-light: 300
+$font-normal: 400
+$font-bold: 700
+$font-bolder: 900
+
+
+.title-box
+    background: $accent
+    color: $text-inverse
+    padding: .5em
+    margin: 0 auto
+    max-width: 90%
+    transform: translateY(-45%)
+    
+    @media(min-width: 725px)
+        width: 750px
+        
+    & h1
+        font-weight: $font-light
+
+    & p 
+        //padding-bottom: 0
+        line-height: .9em
+
+    //any time bg-primary follows title-box its margin-top shrinks by 5vh
+    //so it applies to class that follows     
+    & + .bg-primary
+        margin-top: -5vh
+        //border: 2px solid black
+
+// font mixin
+=font($weight, $stack-arg: $font-stack)
+
+    font-family: $stack-arg
+    font-weight: $weight
+
+
